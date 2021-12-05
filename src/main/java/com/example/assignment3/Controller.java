@@ -3,6 +3,7 @@ package com.example.assignment3;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.*;
+import javafx.event.*;
 
 public class Controller {
 
@@ -20,14 +21,14 @@ public class Controller {
 
     @FXML
     private void verifyAction() {
-        final String userMail = email.getText();
-        final String userPass = password.getText();
+        String userMail = email.getText();
+        String userPass = password.getText();
 
-        if(userMail.contains("@") && userMail.matches(".com$")) {
+        if(userMail.matches("(.*)@(.*)") && userMail.matches(".com$")) {
             verMail = true;
         }
 
-        if(userPass.contains("[abcdefghijklmnopqrstuvwxyz]") && userPass.contains("[0-9")) {
+        if(userPass.contains("[abcdefghijklmnopqrstuvwxyz]") && userPass.contains("[0-9]")) {
             verPass = true;
         }
 

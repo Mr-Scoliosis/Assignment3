@@ -38,6 +38,7 @@
     <Button text="Verify"
             GridPane.columnIndex="0" GridPane.rowIndex="3"
         onAction="#verifyAction"/>
-    <Label fx:id="verStatus"/>
+    <Label fx:id="verStatus"
+            GridPane.columnIndex="0" GridPane.rowIndex="4"/>
 
 </GridPane>
