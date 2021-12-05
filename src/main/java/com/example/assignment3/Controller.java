@@ -36,24 +36,24 @@ public class Controller {
             verMail = true;
         }
 
-        for (int i = 0; i < digitList.length; i++) {
-            String var = digitList[i];
+        for (String var : digitList) {
             if (userPass.contains(var)) {
                 isDigit = 1;
+                break;
             }
         }
-            for (int k = 0; k < charList.length; k++) {
-                String vark = charList[k];
-                if (userPass.contains(vark)) {
-                    isChara = 1;
-                }
+        for (String vark : charList) {
+            if (userPass.contains(vark)) {
+                isChara = 1;
+                break;
             }
-            for (int j = 0; j < specList.length; j++) {
-                String varj = specList[j];
-                if (userPass.contains(varj)) {
-                    isSpec = 1;
-                }
+        }
+        for (String varj : specList) {
+            if (userPass.contains(varj)) {
+                isSpec = 1;
+                break;
             }
+        }
 
                 int length = userPass.length();
                 if (length > 7) {
