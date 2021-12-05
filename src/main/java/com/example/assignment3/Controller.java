@@ -24,7 +24,7 @@ public class Controller {
         String userMail = email.getText();
         String userPass = password.getText();
 
-        if(userMail.matches("(.*)@(.*).com")) {
+        if(userMail.matches("(.*)@(.*).com") || (userMail.matches("(.*)@(.*).ie"))) {
             verMail = true;
         }
 
