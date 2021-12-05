@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -25,14 +26,18 @@
         GridPane.columnSpan="2"/>
 
     <Label text="e-mail:"
-        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+       GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
     <TextField
-               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
     <Label text="Password:"
        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
     <PasswordField
-                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+       GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Button text="Verify"
+       GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
 </GridPane>
