@@ -5,8 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
-<?import javafx.scene.control.Button?>
 <!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.assignment3.Controller">
     <padding>
@@ -28,17 +26,18 @@
     <Label text="e-mail:"
            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-    <TextField
+    <TextField fx:id="email"
             GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
     <Label text="Password:"
            GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
-    <PasswordField
+    <PasswordField fx:id="password"
             GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
     <Button text="Verify"
             GridPane.columnIndex="0" GridPane.rowIndex="3"
-        />
+        onAction="#verifyAction"/>
+    <Label fx:id="verStatus"/>
 
 </GridPane>
