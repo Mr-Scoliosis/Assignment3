@@ -23,7 +23,7 @@ public class Controller {
         final String usermail = email.getText();
         final String userpass = password.getText();
 
-        if(usermail.matches("(.*)@(.*)") && usermail.matches("(.@)") && usermail.matches(".com$")) {
+        if(usermail.contains("@") && usermail.matches(".com$")) {
             verMail = true;
         }
 
