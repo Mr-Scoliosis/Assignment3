@@ -20,11 +20,15 @@ public class Controller {
 
     @FXML
     private void verifyAction() {
-        final String usermail = email.getText();
-        final String userpass = password.getText();
+        final String userMail = email.getText();
+        final String userPass = password.getText();
 
-        if(usermail.contains("@") && usermail.matches(".com$")) {
+        if(userMail.contains("@") && userMail.matches(".com$")) {
             verMail = true;
+        }
+
+        if(userPass.contains("[abcdefghijklmnopqrstuvwxyz]") && userPass.contains("[0-9")) {
+            verPass = true;
         }
 
         if (verMail && verPass) {
